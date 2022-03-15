@@ -1,0 +1,15 @@
+izvrsene usluge: sifraUsluge - idusluge
+izvrsene usluge: sifra repromaterijala - idrepromaterijala
+izvrsene usluge: sifrakorisnika - idkorisnika
+izvrsene usluge - gotovo
+formanarudzbe: sifrausluge - idusluge
+repromaterijal: sifradobavljaca - iddobavljaca
+repromaterijal: sifranabavke - idnabavke
+repromaterijal - gotov
+nabavka: sifradobavljaca - iddobavljaca
+nabavka: sifrarepromaterijala - idrepromaterijala
+nabavka - gotova
+korisnik: narudzba korisnika - idnarudzbe
+korisnik - gotov
+usluge: sifrarepromaterijala - idrepromaterijala
+usluge - gotov

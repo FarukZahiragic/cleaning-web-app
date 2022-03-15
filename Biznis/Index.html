@@ -35,7 +35,9 @@
 		<a href="#first-page" class="active">Super Clean</a>
 		<a href="#O_nama">Šta nudimo?</a>
 		<a href="#Slike">Slike</a>
-		<a href="">Kontakt</a>
+		<a href="#Termin">Rezervišite termin</a>
+		<a href="#Kontakt">Kontakt</a>
+		<a href="tel:+38762728431">062 728 431</a>
 	</div>
 			<!--</div>
 		</nav>-->
@@ -86,42 +88,134 @@
 
 	  <!-- Don't wrap targets in parent -->
 		<s id="s1"></s> 
-	    <s id="s2"></s>
-	    <s id="s3"></s>
-	    <s id="s4"></s>
+		<s id="s2"></s>
+		<s id="s3"></s>
+		<s id="s4"></s>
 
 	  <div class="slider">
-	  <div style="background:#B2BEB5;">
-	      <img src="ZadnjaKlupa.png" alt="Zadnja Klupa">
-	    </div>
-	    <div style="background:#B2BEB5;">
-	      <img src="OpraniUgao.png" alt="Ugao">
-	    </div>
-	    <div style="background:#B2BEB5;">
-	    	<img src="Gepek.png" alt="Gepek">
-	    </div>
-	    <div style="background:#B2BEB5;">
-	    	<img src="Tepih.png" alt="Tepih">
-	    </div>
+	  <div>
+		  <img src="ZadnjaKlupa.png" alt="Zadnja Klupa">
+		</div>
+		<div>
+		  <img src="OpraniUgao.png" alt="Ugao">
+		</div>
+		<div>
+			<img src="Gepek.png" alt="Gepek">
+		</div>
+		<div>
+			<img src="Tepih.png" alt="Tepih">
+		</div>
 	  </div>
 	  
 	  <div class="prevNext">
-	    <div><a href="#s4"></a><a href="#s2"></a></div>
-	    <div><a href="#s1"></a><a href="#s3"></a></div>
-	    <div><a href="#s2"></a><a href="#s4"></a></div>
-	    <div><a href="#s3"></a><a href="#s1"></a></div>
+		<div><a href="#s4"></a><a href="#s2"></a></div>
+		<div><a href="#s1"></a><a href="#s3"></a></div>
+		<div><a href="#s2"></a><a href="#s4"></a></div>
+		<div><a href="#s3"></a><a href="#s1"></a></div>
 	  </div>
 
-	    <div class="bullets">
-		    <a href="#s1">1</a>
-		    <a href="#s2">2</a>
-		    <a href="#s3">3</a>
-		    <a href="#s4">4</a>
-    	</div>
+		<div class="bullets">
+			<a href="#s1">1</a>
+			<a href="#s2">2</a>
+			<a href="#s3">3</a>
+			<a href="#s4">4</a>
+		</div>
 	</div>
 	<br><br><br><br><br>
 
-	<div id="Kontakt"><h1>Kontaktirajte nas</h1></div>
+	<form action="action.php" id="Termin" method="post" accept-charset="UTF-8">
+  <fieldset>
+    <legend>Rezervišite termin</legend>
+    <label>
+      Ime
+      <input type="text" name="ime" required>
+    </label>
+    <label>
+      Prezime
+      <input type="text" name="prezime" required>
+    </label>
+    <div class="two-cols">
+      <label>
+        Email adresa
+        <input type="email" name="email">
+      </label>
+      <label>
+        Adresa
+        <input type="text" name="adresa">
+      </label>
+      <label>
+        Narudžba
+        <input type="text" name="narudzba">
+      </label>
+      <label>
+        Broj telefona
+        <input type="tel" name="telefon">
+      </label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Zahtjev za rezervisanje termina</legend>
+    <div class="two-cols">
+      <label>
+        Datum
+        <input type="date" name="Appointment request" required placeholder="dd/mm/yyyy">
+      </label>
+      <div class="inline">
+        <label>
+          <input type="hidden" name="Morning desired" value="no">
+          <input type="checkbox" name="Morning desired" value="yes">
+          Ujutro
+        </label>
+        <label>
+          <input type="hidden" name="Afternoon desired" value="no">
+          <input type="checkbox" name="Afternoon desired" value="yes">
+          Poslijepodne
+        </label>
+      </div>
+    </div>
+    <p>Potvrda se preuzima preko</p>
+    <div class="inline">
+      <label>
+        <input type="radio" name="Confirmation requested by" value="email" checked>
+        Email
+      </label>
+      <label>
+        <input type="radio" name="Confirmation requested by" value="phone">
+        Telefonskog poziva
+      </label>
+    </div>
+  </fieldset>
+  <div class="btns">
+    <input type="text" name="_gotcha" value="" style="display:none;">
+    <input type="submit" value="Pošalji zahtjev" name="dodaj">
+  </div>
+</form>
+
+
+
+
+	<div id="Kontakt">
+		<h1>Kontaktirajte nas</h1>
+		<div class="container">
+				<form action="action_page.php">
+
+				<label for="fname">Ime</label>
+				<input type="text" id="fname" name="firstname" placeholder="Vaše ime...">
+
+				<label for="lname">Prezime</label>
+				<input type="text" id="lname" name="lastname" placeholder="Vaše prezime...">
+
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="email" placeholder="Vaš email...">
+
+				<label for="subject">Predmet</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+				<input type="submit" value="Pošalji">
+
+			  </form>
+		</div>
+	</div>
 			<!--<p>
 						Da li znate! da vaša omiljena garnitura može izgledati ponovo isto kao kada ste je kupili.
 						Najboji i najbrži način rešavanja nagomilane nečistoće koje se talože u nameštaju,tepihu-itisonu je dubinsko pranje nameštaja. Vremenom ugaona garnitura,krevet,trosed,dvosed,fotelja itd.. postaje sve prljavija.Često na terenu susrećemo mušterije, koje kažu kako nazovi dubinsko pranje nameštaja  rade ručno trljanjem sa krpom i četkom.U prošlosti ovakav metod se jedino i koristio,sve dok nisu izmišljene moćne ekstrakcione mašine sa kojima se jedino može raditi dubinsko ciscenje namestaja. Prema našem iskustvu p﻿otrebno vreme usluge  za dubinsko pranje i ciscenje   Karcher profesionalnom mašinom jednog sednog mesta je 15-20 minuta i zavisi od stepena zaprljanosti materijala.
