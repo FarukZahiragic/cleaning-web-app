@@ -123,7 +123,7 @@
 	</div>
 	<br><br><br><br><br>
 
-	<form action="action.php" id="Termin" method="post" accept-charset="UTF-8">
+	<form action="action.php" id="Termin" method="POST" accept-charset="UTF-8" target="_blank">
   <fieldset>
     <legend>Rezervišite termin</legend>
     <label>
@@ -145,7 +145,13 @@
       </label>
       <label>
         Narudžba
-        <input type="text" name="narudzba">
+        <select name="narudzba">
+        	<option value="pranjeUgla">Pranje ugla</option>
+    		<option value="pranjeAuta">Pranje auto interijera</option>
+    		<option value="pranjeTrosjeda">Pranje trosjeda</option>
+    		<option value="pranjeFotelje">Pranje fotelje</option>
+ 		 </select>
+        <!-- <input type="text" name="narudzba"> -->
       </label>
       <label>
         Broj telefona
@@ -153,7 +159,7 @@
       </label>
     </div>
   </fieldset>
-  <fieldset>
+  <!--<fieldset>
     <legend>Zahtjev za rezervisanje termina</legend>
     <div class="two-cols">
       <label>
@@ -184,7 +190,7 @@
         Telefonskog poziva
       </label>
     </div>
-  </fieldset>
+  </fieldset>-->
   <div class="btns">
     <input type="text" name="_gotcha" value="" style="display:none;">
     <input type="submit" value="Pošalji zahtjev" name="dodaj">
@@ -194,7 +200,7 @@
 
 
 
-	<div id="Kontakt">
+	<!--<div id="Kontakt">
 		<h1>Kontaktirajte nas</h1>
 		<div class="container">
 				<form action="action_page.php">
@@ -215,7 +221,54 @@
 
 			  </form>
 		</div>
-	</div>
+	</div>-->
+
+	<footer>
+	   <div class="content">
+	     <div class="left box">
+	       <div class="upper">
+	         <div class="topic">O nama</div>
+	         <p>CodingLab is a channel where you can learn HTML,
+	         CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+	       </div>
+	       <div class="lower">
+	         <div class="topic">Contact us</div>
+	         <div class="phone">
+	           <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+	         </div>
+	         <div class="email">
+	           <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+	         </div>
+	       </div>
+	     </div>
+	     <div class="middle box">
+	       <div class="topic">Our Services</div>
+	       <div><a href="#">Web Design, Development</a></div>
+	       <div><a href="#">Web UX Design, Reasearch</a></div>
+	       <div><a href="#">Web User Interface Design</a></div>
+	       <div><a href="#">Theme Development, Design</a></div>
+	       <div><a href="#">Mobile Application Design</a></div>
+	       <div><a href="#">Wire raming & Prototyping</a></div>
+	     </div>
+	     <div class="right box">
+	       <div class="topic">Subscribe us</div>
+	       <form action="#">
+	         <input type="text" placeholder="Enter email address">
+	         <input type="submit" name="" value="Send">
+	         <div class="media-icons">
+	           <a href="#"><i class="fab fa-facebook-f"></i></a>
+	           <a href="#"><i class="fab fa-instagram"></i></a>
+	           <a href="#"><i class="fab fa-twitter"></i></a>
+	           <a href="#"><i class="fab fa-youtube"></i></a>
+	           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+	         </div>
+	       </form>
+	     </div>
+	   </div>
+	   <div class="bottom">
+	     <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
+	   </div>
+ </footer>
 			<!--<p>
 						Da li znate! da vaša omiljena garnitura može izgledati ponovo isto kao kada ste je kupili.
 						Najboji i najbrži način rešavanja nagomilane nečistoće koje se talože u nameštaju,tepihu-itisonu je dubinsko pranje nameštaja. Vremenom ugaona garnitura,krevet,trosed,dvosed,fotelja itd.. postaje sve prljavija.Često na terenu susrećemo mušterije, koje kažu kako nazovi dubinsko pranje nameštaja  rade ručno trljanjem sa krpom i četkom.U prošlosti ovakav metod se jedino i koristio,sve dok nisu izmišljene moćne ekstrakcione mašine sa kojima se jedino može raditi dubinsko ciscenje namestaja. Prema našem iskustvu p﻿otrebno vreme usluge  za dubinsko pranje i ciscenje   Karcher profesionalnom mašinom jednog sednog mesta je 15-20 minuta i zavisi od stepena zaprljanosti materijala.

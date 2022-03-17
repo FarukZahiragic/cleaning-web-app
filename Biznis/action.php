@@ -9,7 +9,7 @@
     		$dbhost = "localhost";
     		$dbuser = "root";
     		$dbpass ="";
-    		$database="čisko";
+    		$database="cisko";
     		$conn = new mysqli($dbhost,$dbuser,$dbpass,$database);   
 			$ime = $_POST['ime'];
 			$prezime=$_POST['prezime'];
@@ -17,7 +17,7 @@
 			$adresa = $_POST['adresa'];
 			$narudzba = $_POST['narudzba'];
 			$telefon = $_POST['telefon'];
-			$sql = "INSERT INTO studenti ". "(ime,prezime,email, adresa, narudzba, telefon) ". "VALUES('$ime','$prezime', '$email', '$adresa', '$narudzba', '$telefon')";
+			$sql = "INSERT INTO korisnik ". "(Ime,Prezime, EMailKorisnika, LokacijaKorisnika, Narudzba, KontaktTelefonKorisnika) ". "VALUES('$ime','$prezime', '$email', '$adresa', '$narudzba', '$telefon')";
 			if($conn->query($sql)){
 				echo '<script type="text/javascript">alert("Podaci su uneseni uspješno.");</script>';
 			}
