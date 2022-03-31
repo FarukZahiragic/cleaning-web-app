@@ -6,7 +6,7 @@
 
     if(isset($_POST["dodaj"])) 
     	{
-    		$dbhost = "localhost";
+    		$dbhost = "localhost:3308";
     		$dbuser = "root";
     		$dbpass ="";
     		$database="cisko";
@@ -14,10 +14,13 @@
 			$ime = $_POST['ime'];
 			$prezime=$_POST['prezime'];
 			$email = $_POST['email'];
+			$telefon = $_POST['telefon'];
 			$adresa = $_POST['adresa'];
 			$narudzba = $_POST['narudzba'];
-			$telefon = $_POST['telefon'];
-			$sql = "INSERT INTO korisnik ". "(Ime,Prezime, EMailKorisnika, LokacijaKorisnika, Narudzba, KontaktTelefonKorisnika) ". "VALUES('$ime','$prezime', '$email', '$adresa', '$narudzba', '$telefon')";
+			$samoCiscenje = $_POST['samoCiscenje'];
+			$ciscenjeIPranje = $_POST['ciscenjeIPranje'];
+			$datum = $_POST['datum'];
+			$sql = "INSERT INTO formanarudzbe ". "(ImeKorisnika, PrezimeKorisnika, EMailKorisnika, KontaktTelefonKorisnika, LokacijaNarudzbe, Narudzba, SamoCiscenje, CiscenjeIPranje, DatumNarudzbe) ". "VALUES('$ime','$prezime', '$email', '$telefon', '$adresa', '$narudzba', '$samoCiscenje', '$ciscenjeIPranje', '$datum' )";
 			if($conn->query($sql)){
 				echo '<script type="text/javascript">alert("Podaci su uneseni uspješno.");</script>';
 			}

@@ -444,7 +444,7 @@ http://stackoverflow.com/a/34696029/383904
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], input[type=email], textarea, select, input[type=tel] {
+input[type=text], input[type=email], textarea, select, input[type=tel], input[type=date]{
   background-color: #1af;
   color: #fff;
   width: 100%; /* Full width */

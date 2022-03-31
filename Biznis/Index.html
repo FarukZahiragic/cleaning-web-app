@@ -169,7 +169,7 @@
       <tbody>
         <tr>
           <td>Auto interijer</td>
-          <td>25</td>
+          <td>25 KM</td>
           <td>50 KM</td>
         </tr>
         <tr>
@@ -239,22 +239,43 @@
         <input type="email" name="email">
       </label>
       <label>
+        Broj telefona
+        <input type="tel" name="telefon">
+      </label>
+      <label>
         Adresa
         <input type="text" name="adresa">
       </label>
       <label>
         Narudžba
         <select name="narudzba">
-        	<option value="pranjeUgla">Pranje ugla</option>
-    		<option value="pranjeAuta">Pranje auto interijera</option>
-    		<option value="pranjeTrosjeda">Pranje trosjeda</option>
-    		<option value="pranjeFotelje">Pranje fotelje</option>
+        	<option value="1">Auto interijer</option>
+        	<option value="2">Ugao</option>
+        	<option value="3">Veliki madrac</option>
+        	<option value="4">Mali madrac</option>
+        	<option value="5">Ćilim, tepih i/ili itison</option>
+        	<option value="6">Trosjed</option>
+    			<option value="7">Dvosjed</option>
+    			<option value="8">Kauč</option>
+    			<option value="9">Fotelja</option>
  		 </select>
        
       </label>
       <label>
-        Broj telefona
-        <input type="tel" name="telefon">
+      	Samo dubinsko čišćenje
+      	<input type="checkbox" name="samoCiscenje">
+      </label>
+      </br>
+      </br>
+      <label>
+      	Dubinsko čišćenje i pranje
+      	<input type="checkbox" name="ciscenjeIPranje">
+      </label>
+    </br>
+    </br>
+      <label>
+        Željeni datum usluge
+        <input type="date" name="datum">
       </label>
     </div>
   </fieldset>
