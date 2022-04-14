@@ -23,7 +23,6 @@
 <!-- Latest compiled JavaScript -->
 <!--<script src=""bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>-->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script> 
 	<title>Čisko</title>
 </head>
 <body>
@@ -46,19 +45,6 @@
     <i class="fa fa-bars"></i>
   </a>
 	</div>
-			<!--</div>
-		</nav>-->
-		<!--<div class="nav-content">
-			<img src="logo.png">
-			<p class="nav-text">Lokacija: 71 000 Sarajevo</p>
-		</div>-->
-		<!--<ul id="navbar">
-		  <li><a href="#home">Početna stranica</a></li>
-		  <li><a href="#news">O nama</a></li>
-		  <li><a href="#contact">Galerija</a></li>
-		  <li><a href="#about">Kontaktirajte nas</a></li>
-		</ul>
-	</header>-->
 
 	<div id="first-page">
 				<!--<div class="container" id="first-page">-->
@@ -116,44 +102,37 @@
 		</div>
 	</div>
 
-	<div class="CSSgal" id="Slike">
+	 <!-- Slideshow container -->
+<div class="slideshow-container">
 
-	  <!-- Don't wrap targets in parent -->
-		<s id="s1"></s> 
-		<s id="s2"></s>
-		<s id="s3"></s>
-		<s id="s4"></s>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="ZadnjaKlupa.png" style="width:100%">
+  </div>
 
-	  <div class="slider">
-	  <div>
-		  <img src="ZadnjaKlupa.png" alt="Zadnja Klupa">
-		</div>
-		<div>
-		  <img src="OpraniUgao.png" alt="Ugao">
-		</div>
-		<div>
-			<img src="Gepek.png" alt="Gepek">
-		</div>
-		<div>
-			<img src="Tepih.png" alt="Tepih">
-		</div>
-	  </div>
-	  
-	  <div class="prevNext">
-		<div><a href="#s4"></a><a href="#s2"></a></div>
-		<div><a href="#s1"></a><a href="#s3"></a></div>
-		<div><a href="#s2"></a><a href="#s4"></a></div>
-		<div><a href="#s3"></a><a href="#s1"></a></div>
-	  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="OpraniUgao.png" style="width:100%">
+  </div>
 
-		<div class="bullets">
-			<a href="#s1">1</a>
-			<a href="#s2">2</a>
-			<a href="#s3">3</a>
-			<a href="#s4">4</a>
-		</div>
-	</div>
-	<br><br><br><br><br>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Gepek.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
 
 	<section>
   <!--for demo wrap-->
@@ -321,9 +300,11 @@
 	         <div class="media-icons">
 	           <a href="#"><i class="fab fa-facebook-f"></i></a>
 	           <a href="#"><i class="fab fa-instagram"></i></a>
+	           <!--
 	           <a href="#"><i class="fab fa-twitter"></i></a>
 	           <a href="#"><i class="fab fa-youtube"></i></a>
 	           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+	         	  -->
 	         </div>
 	       </form>
 	     </div>
@@ -332,6 +313,6 @@
 	     <p>Copyright © 2022 <a href="https://farukzahiragic.wordpress.com/">Faruk Zahiragić</a> All rights reserved</p>
 	   </div>
  </footer>
-			
-</body>
+				<script type="text/javascript" src="script.js"></script> 
+	</body>
 </html>
