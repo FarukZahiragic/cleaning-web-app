@@ -123,8 +123,8 @@
 	float: right;
 	border-radius: 0 0 0 150px;
 	filter: drop-shadow(-1vw 1vw 0.3vw #09f);
-  width: 40vw;
-  height: 50vh;
+  /*width: 40vw;
+  height: 50vh;*/
 }
 
 .O_nama_header {
@@ -558,3 +558,11 @@ section{
     text-align: left;
   }
 } 
+
+@media screen and (max-width:  800px) {
+  #O_nama img {
+    height: 240px;
+    width: 240px;
+    border-radius: 0 0 0 75px;
+  }
+}
