@@ -100,7 +100,7 @@
 }
 
 #O_nama {
-	height: 30vh;
+	height: 30vw;
 	display: grid;
 	grid-template-areas: 'O_nama_header O_nama_header O_nama_image'
 						 'O_nama_description O_nama_description O_nama_image'
@@ -546,7 +546,7 @@ section{
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
  This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 900px) {
-  .topnav.responsive {position: relative;}
+  /*.topnav.responsive {position: relative;}*/
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -557,12 +557,38 @@ section{
     display: block;
     text-align: left;
   }
-} 
+}
 
-@media screen and (max-width:  800px) {
+@media screen and (max-width:  768px) {
+  #O_nama {
+    height:  130px;
+  }
+}
+
+
+
+@media screen and (max-width:  1200px) {
+  #O_nama img {
+    height: 300px;
+    width: 300px;
+    border-radius: 0 0 0 85px;
+  }
+}
+
+
+@media screen and (max-width:  900px) {
   #O_nama img {
     height: 240px;
     width: 240px;
     border-radius: 0 0 0 75px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class="red"] {
+    flex-wrap:  wrap;
+    flex-direction:  column;
+    flex:  100%;
   }
 }
